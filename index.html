@@ -7,6 +7,7 @@
 <script type="text/javascript" src="jquery.gmap3.js"></script>
 <style>
   #gmap{
+    float: left;
     width: 800px;
     height: 600px;
   }
@@ -51,7 +52,6 @@ $(function () {
         {name: 'time3', prop: 'http://data.tom.sfc.keio.ac.jp/property/保育時間帯（３歳）'},
         {name: 'time4', prop: 'http://data.tom.sfc.keio.ac.jp/property/保育時間帯（４歳）'},
         {name: 'time5', prop: 'http://data.tom.sfc.keio.ac.jp/property/保育時間帯（５歳）'},
-        {name: 'time6', prop: 'http://data.tom.sfc.keio.ac.jp/property/保育時間帯（６歳）'}
       ];
 
       var querytext = [
@@ -144,6 +144,7 @@ $(function () {
         title:youchien.name.value,
         latitude:youchien.lat.value,
         longitude:youchien.long.value,
+        content:youchien.name.value+'</br>電話番号：0466-'+youchien.phoneNumber.value+'</br><a href='+youchien.website.value+' target=brank>'+youchien.website.value+'</a></br>',
       }
     ]
     });
